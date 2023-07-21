@@ -33,7 +33,7 @@ export const JsonEditor: React.FC<JSONEditorProps> = ({
 }):JSX.Element => {
   const monaco = useMonaco();
   const [errors, setErrors] = useState<string[]>([]);
-  const [isAutoPrettifyOn, toggleAutoPrettifyOn] = useToggle(false);
+  const isAutoPrettifyOn = true;
 
   const [isValidJson, setIsValidJson] = useState<boolean>(false);
   const editorRef = useRef<RefObject | null>(null);
